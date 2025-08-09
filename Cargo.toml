@@ -1,0 +1,19 @@
+[package]
+name = "flatpak-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <email@example.com>"]
+description = "A custom CLI for Flatpak management using Flathub API"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
+sqlx = { version = "0.7", features = ["sqlite", "runtime-tokio-rustls"] }
+indicatif = "0.17"
+tabled = "0.14"
+colored = "2.0"
+thiserror = "1.0"
+toml = "0.8"
+anyhow = "1.0"
